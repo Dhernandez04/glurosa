@@ -1,12 +1,41 @@
 
 nav{
     background-color: #FBF5EE!important;
+    padding: 15px !important;
 }
 
 .nav-link{
     color: #A64A49;
 }
+.card-title{
+    color: #A64A49;
+}
+.bg-color{
+color: #A64A49;
+}
+#log{
+    margin-bottom: 0px!important;
+}
 
+.dropdown li{
+    padding-left: 10px;
+}
+
+
+.btn-primary{
+    color: white;
+    border: none;
+    background: #A64A49 ;
+}
+a:hover{
+    color: #c05f5e ;
+}
+tr td{
+    vertical-align: middle;
+}
+.btn-primary:hover{
+    background: #c05f5e ;
+}
 footer{
    
     width: 100%;
@@ -27,16 +56,37 @@ footer{
     background-color: #FBF5EE !important;
 }
 .box{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 
     overflow: hidden;
   }
+.box{
+    position: absolute;
+    right: 50%;
+}
+  .navbar-toggler:focus {
+    outline: 1;
+     box-shadow: none!important;
+}
+  .navbar-toggler{
+     
+    padding: 5px;
+    height: 35px !important;
+    width: 35px !important;
+  }
 
   ul li{
+    list-style: none;
+    
+  }
+  span{
+    font-size: 25px;
+  }
+ #footer ul li{
       color:#A64A49
   }
-  ul li:first-child{
+ #footer ul li:first-child{
       font-weight: bold;
       list-style: none;
   }
@@ -52,19 +102,66 @@ footer{
         object-position: center center;
       }
   }
+  a{
+      text-decoration: none;
+  }
+  .form-label{
+      color: #A64A49;
+  }
   .img-1{
     width:1298px;
      height:538px;
   }
+  tr td a{
+      font-size: 32px;
+  }
+  #home1{
+      display: none;
+  }
 
   @media screen and (max-width:840px){
+      #home{
+          display: none;
+      }
+      #home1{
+        display: flex;
+    }
        #footer {
           width: 100%;
           display: flex;
           flex-direction: column !important;
+          
+      }
+      .box{
+          position: absolute;
+          right: 0px;
+          top:0px
+      }
+      #footer ul li {
+          font-size: 12px;
       }
       .img-1{
           height: 350px;
+      }
+      tr td{
+          font-size: 12px;
+      }
+      tr td a{
+          font-size: 25px;
+      }
+      label, option{
+          font-size: 12px;
+      }
+      .btn{
+          font-size: 12px;
+
+          height: 35px !important;
+      }
+      .box{
+        width: 50px;
+        height: 50px;
+    
+        overflow: hidden;
       }
   }
 
