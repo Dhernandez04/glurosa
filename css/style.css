@@ -273,6 +273,13 @@ footer{
     
         overflow: hidden;
       }
+      .tarjeta{
+        width: 48%;
+      }
+      .contenedor-cat{
+        height:1600px;
+    }
+
   }
  
 
@@ -285,7 +292,15 @@ footer{
    .img-1{
        height: 180px;
    }
+
    .tarjeta{
     width: 100%;
+
+   }
+   
+
+  .contenedor-cat{
+    height:2600px;
+
 }
-}
+  }
