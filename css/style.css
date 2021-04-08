@@ -129,6 +129,13 @@ footer{
       .img-1{
           height: 350px;
       }
+      .tarjeta{
+        width: 48%;
+      }
+      .contenedor-cat{
+        height:1600px;
+    }
+
   }
 
   @media screen and (max-width:320px){
@@ -140,4 +147,12 @@ footer{
    .img-1{
        height: 180px;
    }
+
+   .tarjeta{
+    width: 90%;
+  }
+
+  .contenedor-cat{
+    height:2600px;
+}
 }
