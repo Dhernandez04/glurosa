@@ -195,6 +195,10 @@ footer{
           flex-direction: column !important;
           
       }
+      
+  .tarjeta{
+      width: 50%;
+  }
       .box{
           position: absolute;
           right: 0px;
@@ -228,6 +232,31 @@ footer{
       }
   }
 
+  .btn-wps{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color:#0df053 ;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+  }
+  .text-footer{
+      font-size: 10px;
+      color: #c05f5e;
+  }
+  .brn-wps:hover{
+      text-decoration: none;
+      color:#0df053 ;
+      background: #fff;
+  }
+
   @media screen and (max-width:320px){
     #footer {
        width: 100%;
@@ -237,4 +266,7 @@ footer{
    .img-1{
        height: 180px;
    }
+   .tarjeta{
+    width: 100%;
+}
 }
