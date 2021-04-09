@@ -360,6 +360,15 @@ height: 600px;
       .contenedor-cat{
         height:1600px;
     }
+    
+    .acerca-des{
+        width: 55%;
+    }
+
+    .contenido{
+        width: 95%;
+    }
+
 
   }
  
@@ -383,5 +392,9 @@ height: 600px;
   .contenedor-cat{
     height:2600px;
 
-}
+    }
+
+    .contenido{
+        height: 5000px;
+    }
   }
