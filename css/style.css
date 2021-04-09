@@ -157,24 +157,7 @@ footer{
     height: auto;
   }
 
-  .contenedor-cat{
-      margin: 20px auto;
-      width: 98%;
-      height: 900px;
-      flex: content;
-      display: flex;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
-  }
-
-  .tarjeta{
-    margin: 20px auto;
-    width: 30%;
-    height: 230px;
-    background-color: #F7F7F7;
-    padding: 1px;
-
-  }
+  
 
   .nuevo{
       width: 40px;
@@ -210,17 +193,77 @@ footer{
     
   }
 
-  .icono{
+  .wrapper{
+      display: flex;
       width: 100%;
+      height: 100%;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 30px;
+      
   }
-.descripcion{
-    margin-top: -25px;
-    text-align: center;
-}
 
-.descripcion>h5{
-   font-size: 15px;
-}
+  .card{
+      margin-top: 20px;
+    width: 30%;
+    height: 300px;
+    background-color: #F7F7F7;
+    padding: 1px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .card:hover{
+      transform: translateY(20px);
+  }
+
+  .card::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(252,205,205);
+      background: linear-gradient(0deg, rgba(252,205,205,1) 0%, rgba(237,176,156,0) 100%);
+      z-index: 2;
+      transition: 0.5s all;
+      opacity: 0;
+  }
+
+  .card:hover::before{
+      opacity: 1;
+  }
+
+  .card .info{
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5s all;
+      margin-left: 10px;
+  }
+
+  .card:hover .info{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+
+  .card .info .btno{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #c05f5e;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+
+  .precio{
+      margin-left: 10px;
+  }
+
 
 .contenido{
     width: 80%;
@@ -257,6 +300,41 @@ height: 600px;
 
 }
 
+.more-info{
+    width: 800px;
+    height: 400px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #A64A49;
+   
+}
+
+.foto{
+    margin-top: 40px;
+    width: 40%;
+    
+}
+
+.foto>img{
+    width: 100%;
+}
+
+.foto-info{
+    margin-top: 40px;
+    width: 40%;
+}
+
+.filas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filas>input{
+    width: 15%;
+}
   @supports(object-fit: cover){
       .box img{
         height: 100%;
@@ -354,7 +432,7 @@ height: 600px;
     
         overflow: hidden;
       }
-      .tarjeta{
+      .card{
         width: 48%;
       }
       .contenedor-cat{
@@ -383,7 +461,7 @@ height: 600px;
        height: 180px;
    }
 
-   .tarjeta{
+   .card{
     width: 100%;
 
    }
