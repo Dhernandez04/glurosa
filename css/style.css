@@ -6,6 +6,12 @@ nav{
 
 .nav-link{
     color: #A64A49;
+    font-size: 18px;
+
+}
+.nav-link:hover{
+    background-color: #e78280;
+    color: white;
 }
 .card-title{
     color: #A64A49;
@@ -74,8 +80,15 @@ color: #A64A49;
 
 .btn-primary{
     color: white;
+   
     border: none;
     background: #A64A49 ;
+}
+.text-justify{
+text-align: justify;
+}
+#cat{
+    margin-right: 34px
 }
 
 tr td{
@@ -233,6 +246,9 @@ footer{
 .payment{
     width: 130px;
     height: 70px;
+}
+.logo-p .payment{
+    width: 100px;
 }
   @media screen and (max-width:840px){
       .nuevo{
