@@ -53,7 +53,7 @@ color: #A64A49;
 
 
 
-  .btn-wps{
+ .btn-wps{
     position: fixed;
     width: 55px;
     height: 55px;
@@ -68,11 +68,8 @@ color: #A64A49;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index: 100;
   }
-  .text-footer{
-      font-size: 10px;
-      color: #c05f5e;
-  }
-  .btn-wps:hover{
+
+.btn-wps:hover{
       text-decoration: none;
       color:#0df053 ;
       background: #fff;
@@ -80,12 +77,25 @@ color: #A64A49;
 
 .btn-primary{
     color: white;
-   
     border: none;
     background: #A64A49 ;
 }
+.btn-primary:focus ,.form-control:focus{
+   
+     box-shadow: none!important;
+}
+.btn-primary:hover{
+    background: #c05f5e ;
+}
+.text-5{
+    font-size: 12px;
+}
 .text-justify{
 text-align: justify;
+}
+.text-footer{
+    font-size: 10px;
+    color: #c05f5e;
 }
 #cat{
     margin-right: 34px
@@ -93,9 +103,6 @@ text-align: justify;
 
 tr td{
     vertical-align: middle;
-}
-.btn-primary:hover{
-    background: #c05f5e ;
 }
 footer{
    
@@ -220,6 +227,9 @@ footer{
    font-size: 15px;
 }
 
+
+/* sidler rangue*/
+
   @supports(object-fit: cover){
       .box img{
         height: 100%;
@@ -250,16 +260,25 @@ footer{
 .logo-p .payment{
     width: 100px;
 }
+.pce{
+    width: 170px!important;
+    height: 70px!important;
+  }
+
   @media screen and (max-width:840px){
       .nuevo{
           width: 40px;
           height: 40px;
           border-radius: 50%;
       }
+      
       .payment{
-          width: 100%;
-          height: 100px;
+        width: 200px;
+        height: 90px;
       }
+      #cat{
+        margin-right: 10px
+    }
       #titilo{
             font-size: 10px!important;
       }
