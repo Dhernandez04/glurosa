@@ -173,7 +173,9 @@ footer{
     height: 230px;
     background-color: #F7F7F7;
     padding: 1px;
+
   }
+
   .nuevo{
       width: 40px;
       height: 40px;
@@ -187,7 +189,7 @@ footer{
       -moz-box-shadow: -2px 7px 17px -6px rgba(0,0,0,0.75);
       box-shadow: -2px 7px 17px -6px rgba(0,0,0,0.75);
       position: absolute;
-      
+
       
   }
 
@@ -218,6 +220,41 @@ footer{
 
 .descripcion>h5{
    font-size: 15px;
+}
+
+.contenido{
+    width: 80%;
+    height: 2700px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenido>h2{
+    margin: 10px auto;
+}
+.acerca{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.acerca-img{
+width: 40%;
+height: 600px;
+
+}
+
+.acerca-img>img{
+    width: 100%;
+    }
+
+.acerca-des{
+    width: 40%;
+    height: 600px;
+
 }
 
   @supports(object-fit: cover){
