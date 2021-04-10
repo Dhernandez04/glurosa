@@ -398,11 +398,19 @@ span.size-12{
  #submenu-nav .nav-link{
      color: white;
  }
-
+ .dropdown-menu.show{
+    position: absolute;
+    left: -150px;
+  }
   @media screen and (max-width:840px){
       .nav-link{
           padding: 6px;
       }
+      .dropdown-menu.show{
+        position: absolute;
+        left: -168px;
+      }
+     
       .nuevo{
           width: 40px;
           height: 40px;
