@@ -21,6 +21,7 @@ color: #A64A49;
 }
 #log{
     margin-bottom: 0px!important;
+    padding-left: 10px;
 }
 
 .dropdown li{
@@ -388,7 +389,12 @@ span.size-12{
 .pce{
     width: 170px!important;
     height: 70px!important;
-  }
+  
+}
+#no{
+    position: absolute;
+    left: -30px;
+}
 
  #submenu-nav{
      padding: 0px!important;
@@ -405,6 +411,7 @@ span.size-12{
   @media screen and (max-width:840px){
       .nav-link{
           padding: 6px;
+          font-size: 15px;
       }
       .dropdown-menu.show{
         position: absolute;
