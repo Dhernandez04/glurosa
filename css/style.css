@@ -248,8 +248,17 @@ footer{
       opacity: 0;
       transform: translateY(30px);
       transition: 0.5s all;
-      margin-left: 10px;
+      left: 50px;
   }
+ .col-sm-4 .card .info{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    left: 80px;
+}
 
   .card:hover .info{
       opacity: 1;
@@ -319,13 +328,17 @@ height: 600px;
 }
 
 .foto{
-    margin-top: 40px;
+  
     width: 40%;
     
 }
 
 .foto>img{
     width: 100%;
+}
+.foto-baner{
+    width: 200px;
+    height: 200px;
 }
 
 .foto-info{
@@ -338,12 +351,18 @@ height: 600px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-
+.card-body{
+    height: 50px!important;
+}
+.card-body,h4,p{
+    display: inline;
+}
 .filas>input{
     width: 15%;
 }
-
+.modal-body{
+    padding: 0px;
+}
   @supports(object-fit: cover){
       .box img{
         height: 100%;
@@ -443,6 +462,9 @@ height: 600px;
           font-size: 12px;
 
           height: 35px !important;
+      }
+      .modal-body{
+          padding: 15px;
       }
       .box{
         width: 50px;
